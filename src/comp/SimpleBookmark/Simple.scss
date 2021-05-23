@@ -1,0 +1,99 @@
+@import "../../colors";
+.simple_Container {
+	display: flex;
+	width: 95%;
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-top: 100px;
+	justify-content: space-around;
+	// overflow: hidden;
+
+}
+.mobileImage {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	img {
+		width: 100%;
+		max-width: 700px;
+		height: auto;
+	}
+}
+
+.bgImage_Right{
+	width: 100%;
+	max-width: 600px;
+	height: fit-content;
+	position: relative;
+	&::before{
+		content: "";
+		position: absolute;
+		aspect-ratio: 10/3;
+		width: 200%;
+		top: 30%;
+		left: 20%;
+		z-index: -2;
+		background-color: $softBlue;
+		border-radius: 0 0 0 250px;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+.simple {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	max-width: 500px;
+	justify-self: flex-start;
+	padding: 10px;
+	justify-content: center;
+	z-index: 1;
+	.simple_h1 {
+		color: $veryDarkBlue;
+		font-weight: 500;
+		font-size: 50px;
+		text-align: start;
+	}
+	.text {
+		color: $grayishBlue;
+	}
+	.buttons_Container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		gap: 20px;
+	}
+}
+
+
+@media (max-width: 900px) {
+	.simple_Container {
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 50px;
+	}
+	.buttons_Container {
+		justify-content: center;
+	}
+	.mobileImage {
+		display: flex;
+	}
+	.bgImage_Right{
+		&::before{
+			display: none;
+		}
+	}
+}
+
+
+@media (max-width: 500px) {
+	.simple{
+		margin-top: -40px;
+	}
+}

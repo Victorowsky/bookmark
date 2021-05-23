@@ -1,0 +1,104 @@
+@import "../../colors";
+.contact_Container_Background{
+    display: flex;
+    align-items: center;
+    background-color: $softBlue;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 100px;
+    color: white;
+    h1,h4{
+        color: white;
+    }
+    h4{
+        font-weight: 400;
+    }
+ 
+}
+.contact_Container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 550px;
+    gap: 50px;
+}
+
+.contact_Content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer_Background{
+    width: 100%;
+    background-color: $veryDarkBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.footer{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    img{
+        width: 148px;
+        height: 25px;
+    }
+    .footer_Options{
+        display: flex;
+        border-bottom: none;
+        width: 100%;
+        max-width: 600px;
+        justify-content: space-between;
+    
+        align-items: center;
+        .option {
+        cursor: pointer;
+        display: flex;
+        height: auto;
+        align-items: center;
+        transition: 0.2s ease-in-out;
+        text-transform: uppercase;
+        color: white;
+        &:hover {
+            color: $softRed;
+        }
+    }
+    }
+    .footer_Socials{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        img{
+            width: fit-content;
+            cursor: pointer;
+            &:hover{
+                color: $softRed;
+            }
+        }
+        
+    }
+ 
+}
+
+@media (max-width:500px){
+    .footer_Options{
+        flex-direction: column;
+        gap: 30px;
+     }
+}
+
+@media (max-width: 900px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px
+    }
+}

@@ -1,0 +1,29 @@
+.faq_Container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    min-height: 500px;
+    gap: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;;
+
+    .text{
+        width: 100%;
+        max-width: 550px;
+        text-align: center;
+    }
+    .questions{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 550px;
+        align-items: center;
+    }
+}
+// @media (max-width: 900px){
+//     .faq_Container{
+//         margin-top: 100px;;
+//     }
+// }

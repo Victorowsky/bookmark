@@ -1,0 +1,60 @@
+
+@import "../../colors";
+.question_Container{
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    height: fit-content;
+    gap: 20px;
+    img{
+        width: 18px;
+        height: 12px;
+        display: flex;
+        margin: auto 0;
+        margin-right: 10px;
+        transition: 0.2s ease-in-out;
+    }
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding: 20px 0;
+}
+.question_Container:nth-child(1){
+    border-top: 1px solid rgb(185, 185, 185);
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    &:hover{
+        color: $softRed;
+    }
+    cursor: pointer;
+
+
+}
+
+
+.img_Rotated{
+    transform: rotate(180deg);
+}
+.fadeIn-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.fadeIn-enter-active {
+	opacity: 1;
+    transition: opacity 200ms, 200ms transform;
+    transform: translateY(0%);
+    
+}
+.transition-exit {
+    opacity: 1;
+}
+.fadeIn-exit-active {
+	opacity: 0;
+    transition: opacity 200ms, 200ms transform;
+    transform: translateY(-20px);
+
+}
+

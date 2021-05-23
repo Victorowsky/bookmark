@@ -1,0 +1,35 @@
+.download_Container{
+    display: flex;
+    width: 95%;
+    min-height: 500px;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    .text{
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+}
+
+.browsers_Container{
+    display: flex;
+    min-height: 400px;
+    // gap: 50px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+@media (max-width: 900px){
+    .download_Container{
+        margin-top: 100px;
+    }
+    .browsers_Container{
+        flex-direction: column;
+        margin-top: 0px;
+        width: fit-content;
+        gap: 50px;
+    }
+}

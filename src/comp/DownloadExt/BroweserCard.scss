@@ -1,0 +1,32 @@
+
+.browserCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+    box-shadow: 0 0 20px rgb(221, 221, 221);
+    padding: 20px;
+    border-radius: 5px;
+    background: url('../../images/bg-dots.svg') no-repeat 0px 70%  ;
+
+    .logo{
+        width: fit-content;
+        user-select: none;
+    }
+    .browserInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button{
+        margin-top: auto;
+    }
+}
+.browserCard:nth-child(2){
+    align-self: center;
+}
+.browserCard:nth-child(3){
+    align-self: flex-end;
+}
+
